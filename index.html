@@ -83,7 +83,7 @@
       var hash = geomHash(l.feature.geometry.coordinates[1],
         l.feature.geometry.coordinates[0]);
 
-      $.get("https://afternoon-hollows-25507.herokuapp.com/lookup" + hash, function (d) {
+      $.get("https://afternoon-hollows-25507.herokuapp.com/lookup/" + hash, function (d) {
         if(d.auth) {
           l.setStyle({
             radius: 5,
